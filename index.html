@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=display-width,initial-scale=1.0"/>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>   
+  </head>
+  
+<body>
+  <div class="container">
+
+        <header class="header">
+          <h1 id="title">Wudya like to code a survey?</h1>
+          <p id="description"><em>We'd love to hear your feedback!</em></p>
+     </header>  
+
+      <form 
+      type="form" 
+      id="survey-form" 
+      name="survey-form">  
+    
+    
+<!-- Start Input Personal Information-->
+<fieldset>
+           <label for="name" id="name-label">Name</label>
+           <input 
+           id="name" 
+           type="text" 
+           placeholder="Enter your name" 
+           required/>
+ 
+
+ 
+   
+          <label for="email" id="email-label">Email</label>
+          <input id="email" type="email" placeholder="Enter your email" required/>
+        
+        
+          <label for="number" id="number-label">Age (optional)</label>
+          <input type="number" id="number" min="2" max="3" placeholder="Enter your age"/>
+       
+   <!-- End Input Personal Information -->
+           <!-- Start Dropdown List  -->    
+         
+          <label for="dropdown">Do you want to learn how to code?</label>
+          
+          
+          
+          <select name="dropdown" id="dropdown" class="dropdown">
+            <option value="" selected disabled hidden>Select an option</option>
+            <option value="yes">Yes!</option>
+            <option value="maybe">Maybe later</option>
+            <option value="no">Not for me</option>
+            </select>
+           
+            </fieldset>
+<!-- End Dropdown -->  
+              
+              
+         <!-- Start Question w/ Radio Button Answer -->  
+
+            <fieldset class="click">
+            <legend>Have you heard of freecodecamp.org?</legend>
+             <label for"yes"><input type="radio" id="yes" name="radio" value="yes" class="inline" checked>Yes</label>
+               <label for"no"><input type="radio" id="no" name="radio" value="no" class="inline">No</label>
+            </fieldset>
+<!-- End Radio Button-->      
+
+            <!-- Start Checkbox Options Section -->  
+            <fieldset>
+                <legend>What are you interested in learning? <small>(Check all that apply)</small></legend>            
+              
+                <label for"html"><input type="checkbox" id="html" name="learn" value="html" class="inline">HTML</label>                         
+             
+    <label for"css"><input type="checkbox" id="css" name="learn" value="css" class="inline">CSS</label>
+
+              <label for"javascript"><input type="checkbox" id="javascript" name="learn" value="javascript" class="inline">Javascript</label>
+              
+                <label for"python"><input type="checkbox" id="python" name="learn" value="python" class="inline">Python</label>
+              
+<label for"notsure"><input type="checkbox" id="notsure" name="learn" value="notsure" class="inline">I'm not sure</label>
+
+    <label for"notlisted"><input type="checkbox" id="notsure" name="learn" value="notlisted" class="inline">It's not listed </label>    
+              
+                <label for"allofit"><input type="checkbox" 
+                id="allofit" 
+                name="learn" 
+                value="allofit" class="inline">
+                All of it!</label>
+              
+              </fieldset>
+<!-- End Checkbox Options Section -->  
+
+      <!-- Start Comment Section -->
+      <fieldset>
+    <section class="commentbox" id="commentbox">
+      <label for="message">Any questions or comments?</label>
+      <textarea id="message" name="message" rows="6" cols="30" placeholder="Enter your comments here..."></textarea>
+            </section>
+            </fieldset>
+  <!-- End Comment Section -->  
+
+          <!-- Start Submit Button -->  
+            <button type="submit" id="submit" class="submit">Submit</button>
+            
+
+        </form>
+        </div>
+    </body>
+  </html>

@@ -1,0 +1,114 @@
+/* styles.css */
+
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("https://m.media-amazon.com/images/M/MV5BYmE4MDU2N2ItNWUxZC00ODJiLWI4N2YtM2ZhNzFkYTg0MzAzXkEyXkFqcGc@._V1_QL75_UX595.5_.jpg" );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+}
+
+header {
+  margin-top: 5em;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin: 1em auto auto auto;
+  font-size: 3rem;
+}
+
+p {
+  margin: auto auto 1em auto;
+  font-size: 2rem;
+}
+
+h1, p {
+  text-align: center;
+}
+
+form {
+  margin-top: 25px;
+  width: 60vw;
+  max-width: 600px;
+  min-width: 350px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+}
+
+fieldset {
+  border: none;
+  padding: 1em 0;
+}
+
+input, textarea, select {
+  display: block;
+  margin: 1em auto;
+  width: 90%;
+  min-height: 2em;
+}
+
+input, textarea {
+  border: 1px solid #010101;
+  padding: 5px;
+}
+
+input, select {
+  height: 30px;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+select {
+  border-radius: 3px;
+}
+
+label, legend {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  font-family: Arial, sans-serif;
+  margin-left: 2em;
+}
+
+input::placeholder, textarea::placeholder, .dropdown {
+  font-size: 1.6rem;
+}
+
+.inline {
+  display: inline;
+  width: unset;
+  margin: 0 0.5em 0 1em;
+  vertical-align: middle;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 90%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.8rem;
+  min-width: 300px;
+  border-color: #010101;
+  border-radius: 3px;
+  background-color: #e88739;
+}
